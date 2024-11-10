@@ -1,5 +1,14 @@
+cd getGrass
+
+pip install -r requirements.txt
+
 ip.txt内填写代理，一行一个
+
 socks5://user:password@host:port
+
+config.json内填写 user_id
+
+python main.py
 
 ### user_id获取方法
 
