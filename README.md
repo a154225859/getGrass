@@ -1,3 +1,6 @@
+ip.txt内填写代理，一行一个
+socks5://user:password@host:port
+
 ### user_id获取方法
 
 1.打开链接登录https://app.getgrass.io/dashboard
