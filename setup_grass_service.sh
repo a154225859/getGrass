@@ -37,13 +37,13 @@ sudo systemctl daemon-reload
 
 # 启动并启用服务
 echo "启动 grass 服务..."
-sudo systemctl start grass.service
+sudo systemctl start getgrass.service
 
 echo "将 grass 服务设为开机启动..."
-sudo systemctl enable grass.service
+sudo systemctl enable getgrass.service
 
 # 检查服务状态
 echo "检查服务状态..."
-sudo systemctl status grass.service --no-pager
+sudo systemctl status getgrass.service --no-pager
 
 echo "设置完成。grass 服务已设置为开机启动。"
