@@ -42,8 +42,8 @@ async def connect_to_wss(socks5_proxy, user_id):
             ssl_context = ssl.create_default_context()
             ssl_context.check_hostname = False
             ssl_context.verify_mode = ssl.CERT_NONE
-            uri = "wss://proxy.wynd.network:4650/"
-            server_hostname = "proxy.wynd.network"
+            uri = "wss://proxy2.wynd.network:4650/"
+            server_hostname = "proxy2.wynd.network"
             proxy = Proxy.from_url(socks5_proxy)
             async with proxy_connect(uri, proxy=proxy, ssl=ssl_context, server_hostname=server_hostname,
                                      extra_headers=custom_headers) as websocket:
@@ -72,7 +72,7 @@ async def connect_to_wss(socks5_proxy, user_id):
                                 "user_agent": custom_headers['User-Agent'],
                                 "timestamp": int(time.time()),
                                 "device_type": "desktop",  # Metadata desktop
-                                "version": "4.28.2",  # File version sesuai data aplikasi
+                                "version": "4.30.0",  # File version sesuai data aplikasi
                                 "product": "Grass",  # Nama produk sesuai informasi aplikasi
                                 "copyright": "© Grass Foundation, 2024. All rights reserved."
                             }
